@@ -9,27 +9,29 @@
 	\vspace{\stretch{1}}
 	\setlength{\baselineskip}{2.4\originalbaselineskip}
 	\begin{center}
-		\textsf{\huge \directlua{value(large_title)}}
+		\textsf{\huge \directlua{Analyzing the Influence of Twitter User Engagement: Assessing the Effectiveness of a Government Department's Social Media Communication Strategy in Engaging with South African Citizens}}
 	\end{center}
 	\begin{center}
 		\textsf{by}
 	\end{center}
 	\begin{center}
-		\textsf{\large \directlua{value(author)}}
+		\textsf{\large \directlua{Nozuko M E Twala}}
 	\end{center}
 	\vspace{\stretch{1}}
 	\setlength{\baselineskip}{1.3\originalbaselineskip}
 	\begin{center}
 		\textsf{Submitted in partial fulfillment of the requirements for the degree\\
-		\directlua{value(document.degree_name)}\\
-		in the \directlua{value(faculty)}\\
-		\directlua{value(institution)}, \directlua{value(location)}}
+		\directlua{Master In Information Technology (Big Data Science})}\\
+		in the \directlua{Faculty of Engineering, Built Environment and Information Technology}\\
+		\directlua{University of Pretoria}, \directlua{Pretoria}
 	\end{center}
 	\vspace{0.15cm}
 	\centerline{
-		\textsf{April 2008}
+		\textsf{2023}
 	}
 \end{titlepage}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -60,27 +62,35 @@
 \newpage
 
 \begin{center}
-	{\large\bf \directlua{value(title)}}
+	{\large\bf \directlua{Analyzing the Influence of Twitter User Engagement: Assessing the Effectiveness of a Government Department's Social Media Communication Strategy in Engaging with South African Citizens}}
 \end{center}
 \begin{center}by\end{center}
 \begin{center}
-	{\directlua{value(author)}}\\
-		E-mail: \href{mailto:\directlua{value(email)}}{\directlua{value(email)}}
+	{\directlua{Nozuko M E Twala}}\\
+		E-mail: \href{mailto:\directlua{value(email)}}{\directlua{twalantombozuko@gmail.com}}
 \end{center}
 \vspace{1cm}
 \begin{center}{\large\bf Abstract}\end{center}
-\directlua{input_all(abstract_includes)}
+\directlua{This research delves into the potential of social media technologies for governments, serving as an indirect avenue for accessing low-cost external big data sources for intelligent communication strategy outcomes. Focused on government-citizen engagements via the Twitter platform, the study spans from the platform's inception in 2018 to 2021, aiming to comprehend the impact of this communication strategy over four years.
+
+The study unfolds in two dimensions: an initial exploratory analysis utilizing metrics to grasp behavior context in engagements, followed by text mining outcomes examining the tax authority's interactions with users. This includes an exploration of topics and underlying sentiments associated with them, guided by computational grounded theory rooted in new data patterns.
+
+A proposed framework, Latent Dirichlet Allocation (LDA), emerges for predicting hashtag recommendations to organize tweet context and enhance the effectiveness of topics in user engagement within the public sector. Comprehensive datasets spanning a decade, specifically from 2018 to 2021, are collected, with the first dataset focusing on organizational messages, and the second on citizen engagement with the brand. This facilitates a comparative analysis between users and a specific government entity responsible for tax revenue collection.
+
+The research contributes insights for government entities, particularly in tax administration, emphasizing the use of social media technologies for organized user engagement. The study aims to address the research objective on the impact and effective strategies for improving user engagement, with a specific focus on hashtag recommendations due to their minimal usage and the overall organization of tweets for effective two-way communication.
+
+In addressing the text classification problem, the prediction model employs both supervised (Random Forest Classifier and Linear Support Vector Classifier) and unsupervised (LDA) algorithms. The RFC model is performing better than the SVM model, despite the narrow margins when looking at the Jaccard score, whereas the accuracy score for both is the same.  Due to limitations of adequate metrics to evaluate hashtag recommendation both the accuracy and jaccard scores have not been able to provide a quantifiable measure for the LDA method.  Even with this limitation, the hashtag recommendation system can automatically suggest hashtags to a user while writing a tweet using the LDA topic model based method.}
 \noindent\
 
-\noindent{\bf Keywords:} First keyword, second keyword, final keyword.
+\noindent{\bf Keywords: social media technologies, government-citizen engagement, Latent Dirichlet Allocation, hashtag recommendation.
 
 \vfill
 \noindent
-{\bf\parbox{26.8mm}{Supervisors}:} Prof.~S. U. P. Visor \\* % only provide titles of Prof. or Dr. (not Mr.)
+{\bf\parbox{26.8mm}{Supervisors}:} Prof.~Vukosi \\* % only provide titles of Prof. or Dr. (not Mr.)
 {\bf\parbox{28.55mm}{~}} Dr.~A. N. Other \\*
 %{\bf\parbox{26.8mm}{Supervisor}:} Prof.~S. U. P. Visor \\* % if you only have a single supervisor
 {\bf\parbox{26.8mm}{Department}:} Department of Computer Science \\*
-{\bf\parbox{26.8mm}{Degree}:} Philosophiae Doctor
+{\bf\parbox{26.8mm}{Degree}:} Masters Degree
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
