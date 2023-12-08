@@ -1,0 +1,66 @@
+\chapter{Conclusions}
+
+\section{Summary of Conclusions}
+\label{sec:conclusions:conclusion_summary}
+
+The purpose of this chapter is to summarize the experiment results with findings from the analysis conducted to answer the sub objectives of the study.  In exploring the Twitter data from government the research methodology described in the previous questions covers both qualitative for text mining while this chapter will be quantitative techniques for machine learning algorithms to predict hashtags.
+
+Therefore the chapter is divided according to the following, 1) Exploratory data analysis which has been the main focus of the RQ1, followed by Topic Modelling and Sentiments stemming from the 4 year data to answer RQ1 and RQ2 and lastly, machine learning prediction techniques for hashtag recommendation to answer RQ3.  All in the efforts to answer the research sub-objectives.
+
+\subsection{Summary of Findings}
+
+The study considers a large user community of citizens and government yielding tweets data that has been explored in a study on understanding characteristics and hashtag recommendation techniques. 
+
+\subsubsection{RQ1:Exploratory Data Analysis:}
+Present an overview of the descriptive statistics and general insights obtained from the Twitter dataset.
+Analyze user engagement metrics, such as the number of tweets, retweets, likes, replies, and followers, to understand user activity and involvement.
+Explore temporal patterns and trends in user engagement, identifying peak periods, popular topics, or events that drive higher engagement.\\
+
+"Our study shows that hashtag usage by a user community is very skewed. Very few hashtags enjoy high popularity in tweets and users, while the vast majority of them are used in one tweet or by one user. This observation is consistent with the earlier studies.
+
+\subsubsection{RQ2:}
+
+Having gone through the process of collecting Twitter data, 
+with the application of the preprocessing steps applied to the data, such as cleaning, tokenization, removing stop words, handling hashtags/mentions, and any specific considerations for Twitter data.
+The processing for removal of noise in the data resulting in the experimental dataset containing 7 887 tweets, total length of the dataset is 761 122 characters with 51 hashtags.  Also some of the interesting characteristics include 104 987 words, 13.33 mean number of words per tweet, Mean length of a tweet is 97.0.\\
+
+We began by discussing the importance of text mining in extracting meaningful information from large volumes of text data. By using techniques such as tokenization, stemming, and sentiment analysis, we were able to process textual data and prepare it for further analysis.
+
+\subsubsction{RQ3:Hashtag Recommendation Prediction}
+For the experiment for hashtag recommendation the prediction techniques used both supervised and unsupervised.  To accommodate the supervised models a target label for hashtags tokens has been  created for the experiment.  The majority of the data set was therefore removed, leaving only 11,2 percent of the overall dataset, a small sample.  Explain the process of topic modeling, such as using techniques like Latent Dirichlet Allocation (LDA) to identify latent topics in the Twitter data.
+Present the identified topics and their corresponding keywords, along with their prevalence in the dataset.
+Discuss the interpretability and coherence of the topics, emphasizing their relevance and representativeness of the Twitter conversations.\\
+
+\textbf{Classification is a supervised learning method that trains a classifier to predict a class label given an instance. While binary classifiers tackle only two categories, multiclass classifiers tackle multiple categories. Hashtag recommendation is commonly tackled as a multi-class classification problem of hashtags [49,52,53,56], where every hashtag is considered as a distinct class label. The intuition of the classification based hashtag recommendation is that the abundance in posts and hashtags equip classifiers with an immense amount of labelled data to learn strong representations [80]. Classification-based hashtag recommendation requires less task-specific assumption and engineering in comparison with topic-based hashtag recommendation [80].
+Mention the focus on comparing the performance of topic modeling against supervised techniques (SVM and RF classifiers) for hashtag recommendation.\\}
+
+\subsection{Implications and Recommendations:}
+Discuss the implications of the findings for Twitter users, such as the potential for improved content discovery, enhanced user engagement, and more relevant hashtag recommendations.
+Highlight the advantages of leveraging topic modeling techniques for hashtag recommendation prediction and its potential benefits for user experience and overall engagement on Twitter.
+Provide recommendations for Twitter and its users, such as incorporating topic modeling into hashtag recommendation systems, leveraging the identified topics for content curation, or exploring user-specific topic preferences for personalized recommendations.\\
+
+\subsection{Conclusion:}
+
+Summarize the key findings from the EDA, emphasizing the superiority of topic modeling over supervised techniques for hashtag recommendation prediction.  Highlight the insights gained regarding user engagement and the potential benefits of topic modeling in understanding Twitter conversations.  Conclude with potential future research directions, such as refining topic modeling approaches, incorporating sentiment analysis, or exploring the temporal dynamics of user engagement and topic preferences on Twitter.
+
+The hashtag recommendation system can be useful phenomenon for microblog communication in particular in the context of government communication with citizens within an e-government approach.  Generally, Twitter use has also gained popularity as a communication platform between government with citizens due to availability of internet-data and usage of smart phones devices aiding easy access and use.  However, the amount of Twitter data produced can be overwhelmingly large in terms of volume and scattered bringing limitations of interpretability when not categorized for efficient understanding of topics especially relating to government operational and policy making matters.  The study has shown that 11,65 percent of user tweets does not carry hashtags.  Hence, then this study proposes a personalized hashtag recommendation method type that considers textual content of tweets content only. 
+
+Resulting in an experiment setup consideration of supervised and unsupervised machine learning algorithms for a hashtag recommendation solution to an uncategorised tweets. The supervised learning techniques considered random forest and support vector machines classifiers. Whereas the unsupervised considered topic modelling an Latent Dirichlet Algorithmn.  Of which the based topic model as the best performing to find meaning latenty topics and global hashtags (pyLDAVIS output).  Given a user and a tweet, our method selects the top most similar users and top most similar tweets. Hashtags are then selected from the most similar tweets and users and assigned some ranking scores. Experiment results show that using user preferences and tweet content will give us better recommendation than just using tweet content alone but paying attention the accuracy of the model.
+
+\subsection{Summary of Contributions}
+
+Analysing social media use characteristics and text mining outcomes can be instrumental in understanding its usability, effectiveness and big data prospects.
+On the whole, this paper makes a number of contributions to hashtag analysis and recommendation as shown below:
+– For the first time, a very large user community and its tweets have been used in a study on hashtag usage and recommendation. We have observed in this dataset that less than 12% of tweets contain hashtags.  The study results indicate effective prediction techniques of up to 5 hashtags at a tweet level of a government tweets and also tax revenue related.  
+– The study has developed a hashtag recommendation method that can recommend up to 5 hashtags, considering only the tweet content. 
+
+Percentage of posts that have recommended hashtags in the test set, with a threshold of 0.010 is 72 percent.  This means only 28 percent of tweets could not have a hashtag classification.  Possible attributable characteristics affecting quality of tweets such as mean number of words per tweet of 13.33 words, 
+Mean length of a tweet is: 97.0 when maximum is 140 words.  Overall topic coherence evaluation for exploration of results in topic modeling is effectively showing interpretrable topics for the 72 percent cases with hashtags. 
+
+Therefore, the study results show that the unsupervised method for LDA Topic Modelling can achieve hashtags prediction when asked to identify up to 5 new hashtags to users for a tweet.  Due to a small dataset the model comparisons for best performance was only be done for the 2 models using supervised techniques.  The LDA comprised of accuracy score of 0,00 for hashtag recommendation prediction of up to 5 hashtags when compared to the RF and SVM  classification models, with 0,17 and 0,16 respectively.  
+
+\section{Future Work}
+%%\label{sec:conclusions:future_work}
+
+Enumerate the future work that you could foresee developing from the work you have done here. Mention areas you could not focus on, or possible extensions to your work. It is a good idea to be thorough, since you increase your chances of being referenced by other researchers who follow up on your work, even if you do not do so yourself. You may consider writing this as a bulleted list, if you mention many aspects.
+
